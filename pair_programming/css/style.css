@@ -5,9 +5,216 @@ html{
 
 body{
   height:100%;
-  background-color: lightgrey;
 }
 
-.otoiawase_table{
-  margin-left: 100px
+.container{
+  width:980px;
+  margin:0 auto;
+  position:relative;
+  min-height:100%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.header{
+  background-color: #006666;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+ul.top_menu{
+  float: right;
+}
+
+.top_menu li{
+  float: left;
+  width: auto;
+}
+
+.top_menu li a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+.top_menu li a:hover{
+  text-decoration: underline;
+}
+
+.logo_image{
+  width: 110px;
+  margin: 0;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo_image{
+  width: 48px;
+  float: left;
+  margin-left: 10px;
+}
+
+.image_area{
+  width:100%;
+}
+
+.side_menu{
+  width:300px;
+  float:left;
+}
+
+.side_menu li{
+  background-color: #006666;
+  height:6rem;
+  margin-bottom: 10px;
+}
+
+.side_menu li:hover{
+  opacity:0.6;
+}
+
+.side_menu li a{
+  font-size:2rem;
+  background-color:#006666;
+  text-decoration:none;
+  display:block;
+  padding:2rem;
+  color:white;
+}
+
+.side_menu .point{
+  opacity: 0.5;
+}
+
+.side_menu .point a{
+  color:white;
+}
+
+.banner img{
+  width:100%;
+}
+
+.banner a:hover{
+  opacity:0.6;
+}
+
+.banner{
+  margin-top:20px;
+}
+
+.wrapper{
+  margin-top:10px;
+  padding-bottom:100px;
+}
+
+.content{
+  width:660px;
+  margin-left:20px;
+  float:left;
+  font-size:1.5rem;
+}
+
+.news{
+  height:200px;
+  background-color:#FCE8E7;
+  padding:20px;
+  overflow:scroll;
+  line-height: 2;
+}
+
+.banner_content{
+  margin-top:10px;
+  display:table;
+}
+
+.banner_content li{
+  display:table-cell;
+}
+
+.banner_content li img{
+  width:100%;
+}
+
+.company{
+  border-collapse:collapse;
+}
+
+.company tr{
+  height:5rem;
+}
+
+.company th{
+  width:100px;
+  background-color:#B1B1B1;
+  color:#fff;
+  border-bottom:solid 1px #fff;
+}
+
+.company td{
+  width:560px;
+  padding-left:1rem;
+  border:solid 1px #B1B1B1;
+}
+
+.company tr:last-child th{
+  border-color:#B1B1B1;
+}
+
+.otoiawase_text{
+  text-align:right;
+  padding-right:10px;
+  width:150px;
+}
+
+.otoiawase_input input{
+  width:480px;
+}
+
+.otoiawase_input textarea{
+  width:480px;
+  height:7rem;
+}
+
+.otoiawase_submit{
+  text-align:center;
+  font-size:3rem;
+  margin-top:0px;
+}
+
+#submit_button{
+  background-color:#008080;
+  color:white;
+}
+
+#submit_button:hover{
+  opacity:0.6;
+}
+
+.footer{
+  height:100px;
+  width:100%;
+  background-color:#006666;
+  position:absolute;
+  bottom:0;
+  display:table;
+}
+
+.footer p{
+  font-size:1rem;
+  color:#fff;
+  text-align:center;
+  vertical-align: middle;
+  display:table-cell;
 }

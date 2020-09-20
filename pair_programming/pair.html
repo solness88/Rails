@@ -4,42 +4,79 @@
     <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>ペアプログラミング</title>
+    <title>株式会社DIVE</title>
   </head>
   <body>
-    <div class = "otoiawase_table">
-    <h1 class="otoiawase_title">お問い合わせはこちら</h1>
-    <article class="content">
-      <form action="#" method="post">
-        <table>
-          <tr>
-            <td class="otoiawase_text"><p>お名前</p></td>
-            <td class="otoiawase_input"><p><input type="text" name="name"></p></td>
-          </tr>
-          <tr>
-            <td class="otoiawase_text"><p>住所</p></td>
-            <td class="otoiawase_input"><p><input type="text" name="name"></p></td>
-          </tr>
-          <tr>
-            <td class="otoiawase_text"><p>メールアドレス</p></td>
-            <td class="otoiawase_input"><p><input type="text" name="mailaddress"></p></td>
-          </tr>
-          <tr>
-            <td><P>性別</P></td>
-            <td>
-              <input type="radio" name="gender" value="male">男性
-              <input type="radio" name="gender" value="female">女性
-              <input type="radio" name="gender" value="male">その他
-            </td>
-          </tr>
-          <tr>
-            <td class="otoiawase_text"><p>お問い合わせ内容</p></td>
-            <td class="otoiawase_input"><p><textarea name="otoiawase"></textarea></p></td>
-          </tr>
-        </table>
-        <p class="otoiawase_submit"><input id="submit_button" type="submit" value="送信"></p>
-      </form>
-    </article>
+    <div class="container">
+      <header class="header clearfix">
+        <a href="index.html">
+          <img src="./pictures/animal_bear_panda.png" class="logo_image">
+        </a>
+        <nav>
+          <ul class="top_menu clearfix">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="business.html">事業内容</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img src="./pictures/panda-3857754_1920.jpg" class="image_area">
+      <div class="wrapper clearfix">
+        <aside class="side_menu">
+          <nav>
+            <ul>
+              <li><a href="business.html">事業内容</a></li>
+              <li><a href="company.html">会社概要</a></li>
+              <li class="point"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <article class="content">
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <td class="otoiawase_text"><p>お名前</p></td>
+                <td class="otoiawase_input"><p><input type="text" name="name"></p></td>
+              </tr>
+              <tr>
+                <td class="otoiawase_text"><p>メールアドレス</p></td>
+                <td class="otoiawase_input"><p><input type="text" name="mailaddress"></p></td>
+              </tr>
+              <tr>
+                <td class="otoiawase_text"><p>性別</p></td>
+                <td class="otoiawase_radio"><p><input type="radio" name="sex" value="male">男<input type="radio" name="sex" value="female">女</p></td>
+              </tr>
+
+              <tr>
+                <td class="otoiawase_text"><p>年齢</p></td>
+                <td>
+                  <select>
+                    <option value=""></option>
+                    <option value="10歳未満" {age:selected#10歳未満}>10歳未満</option>
+                    <option value="10代" {age:selected#10代}>10代</option>
+                    <option value="20代" {age:selected#20代}>20代</option>
+                    <option value="30代" {age:selected#30代}>30代</option>
+                    <option value="40代" {age:selected#40代}>40代</option>
+                    <option value="50代" {age:selected#50代}>50代</option>
+                    <option value="60歳以上" {age:selected#60歳以上}>60歳以上</option>
+                  </select>
+                  <input type="hidden" name="field[]" value="age">
+                </td>
+              </tr>
+
+              <tr>
+                <td class="otoiawase_text"><p>お問い合わせ内容</p></td>
+                <td class="otoiawase_input"><p><textarea name="otoiawase"></textarea></p></td>
+              </tr>
+            </table>
+            <p class="otoiawase_submit"><input id="submit_button" type="submit" value="送信"></p>
+          </form>
+        </article>
+      </div>
+      <footer class="footer">
+        <p>Copyright © 2020 PANDANET ALL RIGHTS RESERVED.</p>
+      </footer>
     </div>
   </body>
 </html>
