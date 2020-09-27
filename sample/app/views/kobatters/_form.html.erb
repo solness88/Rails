@@ -1,17 +1,13 @@
-<!-- サイドバー -->
   <div class="wrapper clearfix">
     <aside class="side_menu">
       <p class="banner">
         <img src="/assets/party_animal.png">
       </p>
-
-      <!-- 動物画像フェードイン -->
       <script>
       $(function() {
         $('.banner img').fadeIn(2000)
       });
       </script>
-      
       <nav>
         <ul>
           <li>
@@ -29,7 +25,6 @@
         </ul>
       </nav>
     </aside>
-
     <div class="new_form">
     <%= form_with(model: @kobatter, local:true , url:choose_new_or_edit) do |form| %>
       <% if @kobatter.errors.any? %>
@@ -50,5 +45,3 @@
     <% end %>
     </div>
   </div>
-
-<!--フッター共通化-->
