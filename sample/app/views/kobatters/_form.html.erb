@@ -1,0 +1,54 @@
+<!-- サイドバー -->
+  <div class="wrapper clearfix">
+    <aside class="side_menu">
+      <p class="banner">
+        <img src="/assets/party_animal.png">
+      </p>
+
+      <!-- 動物画像フェードイン -->
+      <script>
+      $(function() {
+        $('.banner img').fadeIn(2000)
+      });
+      </script>
+      
+      <nav>
+        <ul>
+          <li>
+            <img src="/assets/panda1.png" class="animal_image">
+            <%= link_to 'トップページ', kobatters_home_path %>
+          </li>
+          <li>
+            <img src="/assets/lion.png" class="animal_image">
+            <%= link_to 'つぶやき一覧', kobatters_path %>
+          </li>
+          <li>
+            <img src="/assets/panda_coughing.png" class="animal_image">
+            <%= link_to 'つぶやく', new_kobatter_path %>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="new_form">
+    <%= form_with(model: @kobatter, local:true , url:choose_new_or_edit) do |form| %>
+      <% if @kobatter.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= @kobatter.errors.count %>件のエラーがあります。</h2>
+          <ul>
+          <% @kobatter.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="blog_title">
+        <div><h1>内容を入力して「つぶやく」をクリック！</h1></div>
+        <div class="blog_textfield"><%= form.text_area :content,size:"50x10", class:"content_border" %></div>
+        <div><%= form.submit "つぶやく" %></div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+
+<!--フッター共通化-->

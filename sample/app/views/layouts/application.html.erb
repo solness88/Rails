@@ -10,6 +10,25 @@
   </head>
 
   <body>
-    <%= yield %>
+<!-- ヘッダー -->
+    <div class="container">
+      <header class="header clearfix">
+        <span class="logo_image"><%= link_to image_tag('logo.png'), kobatters_home_path %></span>
+        <nav>
+          <ul class="top_menu clearfix">
+            <li><%= link_to 'トップページ', kobatters_home_path %></li>
+            <li><%= link_to 'つぶやき一覧', kobatters_path %></li>
+            <li><%= link_to 'つぶやく', new_kobatter_path %></li>
+          </ul>
+        </nav>
+      </header>
+
+      <%= yield %>
+
+<!-- フッター -->
+      <footer class="footer">
+        <p>Copyright © 2020 PANDA NO TSUBUYAKI All RIGHTS RESERVED.</p>
+      </footer>
+    </div>
   </body>
 </html>

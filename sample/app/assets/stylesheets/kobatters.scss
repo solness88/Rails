@@ -1,0 +1,212 @@
+// Place all the styles related to the kobatters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  font-size: 62.5%;
+  height:100%;
+}
+body {
+  height:100%;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.header {
+  background-color: #349beb;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.top_menu li {
+  float: left;
+  width: auto;
+}
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+.top_menu li a:hover {
+  text-decoration: underline;
+}
+
+.logo_image {
+  float: left;
+  margin: 10px;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul.top_menu{
+  float:right;
+}
+
+//homeページパンダのイラスト
+.panda_list{
+  display:flex;
+  margin-top: 50px;
+}
+
+.panda_list li{
+  visibility: hidden;
+}
+
+.home_panda{
+  display: block;
+  height:235px;
+}
+
+.home_text{
+  text-align: center;
+}
+
+.home_text h1{
+  visibility: hidden;
+  margin-top:50px;
+}
+
+#home_text1{
+  font-size: 50px;
+}
+
+//一覧ページ本文要素
+.article_main{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.article_sentence{
+  font-size: 25px;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article_content{
+  border-style:solid;
+  border-color:#349beb;
+  border-width: 0.1rem;
+  border-radius: 10px;
+  width:400px;
+  height: 50px;
+  padding: 20px 50px;
+  margin:3px;
+  margin-bottom: 30px;
+}
+
+//新規作成ページ
+.new_form{
+  text-align: center;
+}
+
+.new_form div{
+  margin:10px;
+}
+
+.content_border{
+  border-color:#349beb;
+  border-radius: 10px;
+}
+
+//ブログ詳細
+.article_details{
+  font-size: 2rem;
+  border-style:solid;
+  border-color:#349beb;
+  border-width: 0.1rem;
+  border-radius: 10px;
+  width:400px;
+  padding: 20px 50px;
+  margin:3px;
+  margin-bottom: 30px;
+}
+
+.article_content p{
+  font-size: 2rem;
+}
+
+.article_details span{
+  font-size: 1.5rem;
+}
+
+//サイドバー
+.side_menu li{
+  background-color: #349beb;
+  height: 6rem;
+  padding: 0 55px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.animal_image{
+  width: 50px;
+  float: left;
+  margin-top: 5px;
+}
+
+.wrapper{
+  overflow-y: scroll;
+}
+
+.side_menu li a{
+  font-size:2rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding:1.5rem;
+}
+
+.banner img{
+  width: 100%;
+  display: none;
+}
+.banner{
+  margin-top: 20px;
+}
+
+.side_menu{
+  width: 300px;
+  float: left;
+}
+.content{
+  float: left;
+  height: 200px;
+}
+.wrapper{
+  margin-top: 10px;
+}
+
+//フッター
+.footer{
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  background-color: #349beb;
+  display:table;
+}
+.footer p{
+  font-size:1rem;
+  color:#fff;
+  text-align:center;
+  vertical-align: middle;
+  display:table-cell;
+}

@@ -1,0 +1,19 @@
+
+  <ul class="panda_list">
+    <li><img src="/assets/panda1.png" class="home_panda"></li>
+    <li><img src="/assets/monkey.png" class="home_panda"></li>
+    <li><img src="/assets/lion.png" class="home_panda"></li>
+    <li><img src="/assets/blue_bird.png" class="home_panda"></li>
+  </ul>
+  <script>
+    $(function(){
+        $('.panda_list li, .home_text h1').each(function(i){
+            $(this).delay(i * 500).css({visibility:'visible',opacity:'0'}).animate({opacity:'1'},3000);
+        });
+    });
+  </script>
+
+    <div class="home_text">
+      <h1 id="home_text1">なかよし動物園</h1>
+      <h1><%= link_to 'つぶやき一覧へ', kobatters_path %></h1>
+    </div>

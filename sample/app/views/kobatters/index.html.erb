@@ -1,0 +1,52 @@
+<!-- ヘッダー共通化 -->
+
+<!-- サイドバー -->
+<div class="wrapper clearfix">
+  <aside class="side_menu">
+    <p class="banner">
+      <img src="/assets/onsen_animals.png">
+    </p>
+
+    <!-- サイドバーイラストのjQuery -->
+    <script>
+    $(function() {
+      $('.banner img').fadeIn(2000)
+    });
+    </script>
+
+    <nav>
+      <ul>
+        <li>
+          <img src="/assets/panda1.png" class="animal_image">
+          <%= link_to 'トップページ', kobatters_home_path %>
+        </li>
+        <li>
+          <img src="/assets/lion.png" class="animal_image">
+          <%= link_to 'つぶやき一覧', kobatters_path %>
+        </li>
+        <li>
+          <img src="/assets/panda_coughing.png" class="animal_image">
+          <%= link_to 'つぶやく', new_kobatter_path %>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+<!-- 本文 -->
+  <article class="content">
+    <div class="article_main">
+      <h1>つぶやき一覧</h1>
+      <p><%= notice %></p>
+      <% @kobatters.each do |kobatter| %>
+        <div class="article_content">
+          <div class="article_sentence"><%= kobatter.content %></div>
+          <span><%= link_to '詳細を確認する', kobatter_path(kobatter.id) %></span>
+          <span><%= link_to "ブログを編集する", edit_kobatter_path(kobatter.id) %></span>
+          <span><%= link_to 'ブログを削除する', kobatter_path(kobatter.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></span>
+        </div>
+      <% end %>
+    </div>
+  </article>
+</div>
+
+<!-- フッター共通化 -->
