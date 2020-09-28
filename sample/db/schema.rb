@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 2020_09_21_131215) do
 
   create_table "kobatters", force: :cascade do |t|
     t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -4,6 +4,7 @@ class KobattersController < ApplicationController
   end
   def index
     @kobatters = Kobatter.all.order(id: "DESC")
+    @count = Kobatter.all.count
   end
   def new
     @kobatter = Kobatter.new

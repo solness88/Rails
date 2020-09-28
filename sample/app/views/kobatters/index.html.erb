@@ -2,6 +2,8 @@
   <aside class="side_menu">
     <p class="banner">
       <img src="/assets/onsen_animals.png">
+      <h2 class="panda_comment">動物園の出来事を毎日つぶやくよ！</h2>
+      <h2 class="panda_comment">つぶやいた数：<%= @count %></h2>
     </p>
     <script>
     $(function() {
@@ -19,7 +21,7 @@
           <%= link_to 'つぶやき一覧', kobatters_path %>
         </li>
         <li>
-          <img src="/assets/panda_coughing.png" class="animal_image">
+          <img src="/assets/zebra.png" class="animal_image">
           <%= link_to 'つぶやく', new_kobatter_path %>
         </li>
       </ul>
@@ -35,6 +37,7 @@
           <span><%= link_to '詳細を確認する', kobatter_path(kobatter.id) %></span>
           <span><%= link_to "ブログを編集する", edit_kobatter_path(kobatter.id) %></span>
           <span><%= link_to 'ブログを削除する', kobatter_path(kobatter.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></span>
+          <span><%= kobatter.created_at.strftime('%Y/%m/%d %H:%M:%S') %></span>
         </div>
       <% end %>
     </div>

@@ -27,7 +27,7 @@ li {
 }
 .header {
   background-color: #349beb;
-  height: 50px;
+  height: 55px;
   font-size: 1.5rem;
 }
 .top_menu li {
@@ -79,7 +79,7 @@ ul.top_menu{
 
 .home_text h1{
   visibility: hidden;
-  margin-top:50px;
+  margin-top:20px;
 }
 
 #home_text1{
@@ -100,6 +100,10 @@ ul.top_menu{
   text-overflow: ellipsis;
 }
 
+.article_sentence img{
+  width:40px;
+}
+
 .article_content{
   border-style:solid;
   border-color:#349beb;
@@ -110,6 +114,10 @@ ul.top_menu{
   padding: 20px 50px;
   margin:3px;
   margin-bottom: 30px;
+}
+
+.article_content span{
+  margin-right: 10px;
 }
 
 //新規作成ページ
@@ -152,6 +160,7 @@ ul.top_menu{
   background-color: #349beb;
   height: 6rem;
   padding: 0 55px;
+  margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
 }
@@ -175,8 +184,12 @@ ul.top_menu{
 }
 
 .banner img{
-  width: 100%;
+  width: 80%;
   display: none;
+  margin-left: 35px;
+}
+.panda_comment{
+  margin-left: 40px;
 }
 .banner{
   margin-top: 20px;
